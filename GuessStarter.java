@@ -16,7 +16,7 @@ public class GuessStarter {
 		System.out.print("Type a number: ");
 		
 		int guess = in.nextInt(); // User inputs their guess
-		int deviation = number - guess; // Calculates how far off the user's guess was
+		int deviation = Math.abs(number - guess); // Calculates how far off the user's guess was
 		
 		System.out.printf("Your guess is: %d\n", guess);
 		System.out.printf("The number I was thinking of is: %d\n", number);
